@@ -1,0 +1,24 @@
+{
+  "definitions": {
+    "href": {
+      "title": "HREF",
+      "description": "A hyperlink URL",
+      "type": "string"
+    },
+    "hrefTemplated": {
+      "title": "Templated HREF",
+      "description": "A hyperlink that is a URI template",
+      "type": "string"
+    },
+    "isTemplated": {
+      "title": "Is URI Templated?",
+      "description": "Specifies whether or not a link is using URI templates",
+      "type": "boolean"
+    },
+    "isDeprecated": {
+      "title": "Is URI Deprecated?",
+      "description": "Specifies whether or not a link is deprecated",
+      "type": "boolean"
+    }
+  }
+}

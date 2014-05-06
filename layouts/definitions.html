@@ -1,0 +1,27 @@
+<section class="definitions">
+
+  <h2>Definitions</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Definition</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for definition in definitions.definitions %}
+        <tr id="/definitions/{{ loop.key }}">
+          <td><a href="#/definitions/{{ loop.key }}">{{ loop.key }}</a></td>
+          <td>{{ definition.title }}</td>
+          <td>{{ definition.type }}</td>
+          <td>{{ definition.description }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</section>
