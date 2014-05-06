@@ -1,10 +1,11 @@
 {
   "name": "hyperschema.org",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Hyperschema.org Source Code",
   "main": "index.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "server": "node server.js"
   },
   "author": "Stephen Mizell",
   "license": "MIT",

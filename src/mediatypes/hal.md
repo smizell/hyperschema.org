@@ -2,7 +2,8 @@
 title: HAL+JSON
 category: mediaType
 exampleFile: mediatypes/hal_files/example.json
-definitionsFile: mediaTypes/hal.json
+definitionsFile: mediatypes/hal.json
+schemaFile: mediatypes/hal.json
 template: base.html
 spec: http://stateless.co/hal_specification.html
 ---

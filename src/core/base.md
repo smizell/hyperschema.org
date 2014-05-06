@@ -1,7 +1,7 @@
 ---
 title: Core Base Definitions
 category: definitions
-jsonFile: core/base.json
+definitionsFile: core/base.json
 template: base.html
 ---
 
