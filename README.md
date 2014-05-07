@@ -10,7 +10,7 @@ npm install
 
 ## Development Server
 
-One thing that is included is a simple development server for the purpose of handing content negotiation. 
+One thing that is included is a simple development server for the purpose of handling content negotiation. 
 
 ### Run
 
