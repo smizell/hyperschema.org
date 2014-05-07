@@ -6,6 +6,8 @@
   },
   "definitions": {
     "links": { 
+      "title": "HAL Links",
+      "description": "Object of links with the rels as the keys",
       "type": "object",
       "additionalProperties": {
         "oneOf": [ 
@@ -14,8 +16,15 @@
         ]
       }
     },
-    "linkArray": { "type": "array", "items": { "$ref": "#/definitions/linkObject" } },
+    "linkArray": { 
+      "title": "HAL Link Array",
+      "description": "An array of linkObjects of the same link relation",
+      "type": "array",
+      "items": { "$ref": "#/definitions/linkObject" }
+    },
     "linkObject": {
+      "title": "HAL Link Object",
+      "description": "An object with link information",
       "type": "object",
       "properties": {
         "name": { "$ref": "http://hyperschema.org/Core/Link#/definitions/name" },
@@ -27,6 +36,8 @@
       "required": [ "href" ]
     },
     "embedded": {
+      "title": "HAL Embedded Resource",
+      "description": "An embedded HAL resource",
       "type": "object",
       "additionalProperties": {
         "oneOf": [
@@ -35,6 +46,11 @@
         ]
       }
     },
-    "embeddedArray": { "type": "array", "items": { "$ref": "#" } }
+    "embeddedArray": {
+      "title": "HAL Embedded Array",
+      "description": "An array of embedded resources with the same link relation",
+      "type": "array",
+      "items": { "$ref": "#" }
+    }
   }
 }
