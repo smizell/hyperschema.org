@@ -1,7 +1,6 @@
 var Metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     templates = require('metalsmith-templates'),
-    assets = require('metalsmith-assets'),
     _ = require('underscore'),
     swig = require('swig');
 
