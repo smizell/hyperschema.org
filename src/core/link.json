@@ -30,6 +30,11 @@
       "description": "An array of link relations",
       "type": "array",
       "items": { "$ref": "#/definitions/rel" }
+    },
+    "label": {
+      "title": "Label",
+      "description": "Human-readable label for link",
+      "type": "string"
     }
   }
 }

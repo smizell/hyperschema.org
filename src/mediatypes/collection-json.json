@@ -30,7 +30,7 @@
       "properties": {
         "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
-        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+        "prompt": { "$ref": "http://hyperschema.org/core/field#/definitions/label" }
       },
       "required": [ "href", "rel" ]
     },
@@ -63,8 +63,8 @@
       "properties": {
         "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
-        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" },
-        "data": { "$ref": "#/definitions/dataArray" }
+        "prompt": { "$ref": "http://hyperschema.org/core/link#/definitions/label" },
+        "data": { "$ref": "#/definitions/dataPropertyArray" }
       }
     },
     "template": {
@@ -72,7 +72,7 @@
       "description": "A template object",
       "type": "object",
       "properties": {
-        "data": { "$ref": "#/definitions/dataArray" }
+        "data": { "$ref": "#/definitions/dataTemplateArray" }
       }
     },
     "dataPropertyArray": {
@@ -88,7 +88,7 @@
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/properties#/definitions/name" },
         "value": { "$ref": "http://hyperschema.org/core/properties#/definitions/value" },
-        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+        "prompt": { "$ref": "http://hyperschema.org/core/properties#/definitions/label" }
       }
     },
     "dataTemplateArray": {
@@ -104,7 +104,7 @@
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
         "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
-        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+        "prompt": { "$ref": "http://hyperschema.org/core/fields#/definitions/label" }
       }
     }
   }
