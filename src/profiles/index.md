@@ -3,4 +3,4 @@ title: Profiles
 template: base.html
 ---
 
-Profiles page
+Profiles page coming soon.

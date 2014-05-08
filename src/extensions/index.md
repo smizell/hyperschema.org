@@ -3,4 +3,4 @@ title: Extensions
 template: base.html
 ---
 
-Extensions page
+Extensions page coming soon.
