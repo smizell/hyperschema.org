@@ -3,6 +3,7 @@ title: Collection+JSON
 category: mediaType
 definitionsFile: mediatypes/collection-json.json
 schemaFile: mediatypes/collection-json.json
+exampleFile: mediatypes/collection-json_files/example.json
 template: base.html
 ---
 
