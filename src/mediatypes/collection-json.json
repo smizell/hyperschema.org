@@ -30,7 +30,7 @@
       "properties": {
         "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
-        "prompt": { "$ref": "http://hyperschema.org/core/field#/definitions/label" }
+        "prompt": { "$ref": "http://hyperschema.org/core/link#/definitions/label" }
       },
       "required": [ "href", "rel" ]
     },
