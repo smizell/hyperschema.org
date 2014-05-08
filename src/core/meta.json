@@ -1,0 +1,9 @@
+{
+  "definitions": {
+    "version": {
+      "title": "Version",
+      "description": "A version number",
+      "type": "string"
+    }
+  }
+}

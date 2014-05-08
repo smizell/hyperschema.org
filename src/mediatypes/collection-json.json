@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "properties": {
+    "collection": { "$ref": "#/definitions/collection" }
+  },
+  "definitions": {
+    "collection": { 
+      "title": "Collection+JSON Object",
+      "description": "The main Collection+JSON Object",
+      "type": "object",
+      "properties": {
+        "version": { "$ref": "http://hyperschema.org/core/meta#/definitions/version" },
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "links": { "$ref": "#/definitions/links" },
+        "items": { "$ref": "#/definitions/items" },
+        "queries": { "$ref": "#/definitions/queries" },
+        "templates": { "$ref": "#/definitions/templates" }
+      }
+    },
+    "links": { 
+      "title": "Collection+JSON Link Array",
+      "description": "An array of link objects",
+      "type": "array",
+      "items": { "$ref": "#/definitions/link" }
+    },
+    "link": {
+      "title": "Collection+JSON Link Object",
+      "description": "An object with link information",
+      "type": "object",
+      "properties": {
+        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+      },
+      "required": [ "href", "rel" ]
+    },
+    "items": {
+      "title": "Collection+JSON Items Array",
+      "description": "An array of item objects",
+      "type": "array",
+      "items": { "$ref": "#/definitions/item" }
+    },
+    "item": {
+      "title": "Collection+JSON Item Object",
+      "description": "An item object",
+      "type": "object",
+      "properties": {
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "data": { "$ref": "#/definitions/dataPropertyArray" },
+        "links": { "$ref": "#/definitions/links" }
+      }
+    },
+    "queries": {
+      "title": "Collection+JSON Query Array",
+      "description": "An array of query objects",
+      "type": "array",
+      "items": { "$ref": "#/definitions/query" }
+    },
+    "query": {
+      "title": "Collection+JSON Query Object",
+      "description": "A query object",
+      "type": "object",
+      "properties": {
+        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" },
+        "data": { "$ref": "#/definitions/dataArray" }
+      }
+    },
+    "template": {
+      "title": "Collection+JSON Template Object",
+      "description": "A template object",
+      "type": "object",
+      "properties": {
+        "data": { "$ref": "#/definitions/dataArray" }
+      }
+    },
+    "dataPropertyArray": {
+      "title": "Collection+JSON Data Property Array",
+      "description": "An array of data property objects",
+      "type": "array",
+      "items": { "$ref": "#/definitions/dataPropertyObject" }
+    },
+    "dataPropertyObject": {
+      "title": "Collection+JSON Data Property Object",
+      "description": "A data property object",
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/properties#/definitions/name" },
+        "value": { "$ref": "http://hyperschema.org/core/properties#/definitions/value" },
+        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+      }
+    },
+    "dataTemplateArray": {
+      "title": "Collection+JSON Data Template Array",
+      "description": "An array of data template objects",
+      "type": "array",
+      "items": { "$ref": "#/definitions/dataTemplateObject" }
+    },
+    "dataTemplateObject": {
+      "title": "Collection+JSON Data Template Object",
+      "description": "A data template object",
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
+        "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
+        "prompt": { "$ref": "http://hyperschema.org/core/base#/definitions/label" }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
 title: Core Link Definitions
 category: definitions
 definitionsFile: core/link.json
+schemaFile: core/link.json
 template: base.html
 ---
 

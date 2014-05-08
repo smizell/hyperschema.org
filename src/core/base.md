@@ -2,6 +2,7 @@
 title: Core Base Definitions
 category: definitions
 definitionsFile: core/base.json
+schemaFile: core/base.json
 template: base.html
 ---
 

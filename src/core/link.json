@@ -19,6 +19,17 @@
       "title": "Is URI Deprecated?",
       "description": "Specifies whether or not a link is deprecated",
       "type": "boolean"
+    },
+    "rel": {
+      "title": "Link Relation",
+      "description": "A link relation",
+      "type": "string"
+    },
+    "rels": {
+      "title": "Link Relation Array",
+      "description": "An array of link relations",
+      "type": "array",
+      "items": { "$ref": "#/definitions/rel" }
     }
   }
 }

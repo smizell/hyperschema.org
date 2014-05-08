@@ -1,0 +1,19 @@
+{
+  "definitions": {
+    "name": {
+      "title": "Name",
+      "description": "The name of a field or parameter",
+      "type": "string"
+    },
+    "value": {
+      "title": "Value",
+      "description": "The value of a field or parameter",
+      "type": "string"
+    },
+    "label": {
+      "title": "Label",
+      "description": "Human-readable label for field or parameter",
+      "type": "string"
+    }
+  }
+}
