@@ -3,6 +3,7 @@
   "properties": {
     "collection": { "$ref": "#/definitions/collection" }
   },
+  "required": [ "collection" ],
   "definitions": {
     "collection": { 
       "title": "Collection+JSON Object",
@@ -65,7 +66,8 @@
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
         "prompt": { "$ref": "http://hyperschema.org/core/link#/definitions/label" },
         "data": { "$ref": "#/definitions/dataPropertyArray" }
-      }
+      },
+      "required": [ "href", "rel" ]
     },
     "template": {
       "title": "Collection+JSON Template Object",
@@ -89,7 +91,8 @@
         "name": { "$ref": "http://hyperschema.org/core/properties#/definitions/name" },
         "value": { "$ref": "http://hyperschema.org/core/properties#/definitions/value" },
         "prompt": { "$ref": "http://hyperschema.org/core/properties#/definitions/label" }
-      }
+      },
+      "required": [ "name" ]
     },
     "dataTemplateArray": {
       "title": "Collection+JSON Data Template Array",
@@ -105,7 +108,8 @@
         "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
         "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
         "prompt": { "$ref": "http://hyperschema.org/core/fields#/definitions/label" }
-      }
+      },
+      "required": [ "name" ]
     }
   }
 }
