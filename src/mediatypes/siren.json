@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "class": { "$ref": "http://hyperschema.org/core/base#/definitions/classes" },
+    "properties": { "$ref": "http://hyperschema.org/core/properties#/definitions/propertyObject" },
+    "entities": { "$ref": "#/definitions/entities" },
+    "actions": { "$ref": "#/definitions/actions"  },
+    "links": { "$ref": "#/definitions/links"  }
+  },
+  "definitions": {
+    "entities": {
+      "title": "Siren Entity Array",
+      "description": "Array of Siren entities",
+      "type": "array",
+      "items": { "$ref": "#" }
+    },
+    "actions": {
+      "title": "Siren Actions Array",
+      "description": "Array of Siren actions",
+      "type": "array",
+      "items": { "$ref": "#/definitions/action" }
+    },
+    "action": {
+      "title": "Siren Action",
+      "description": "Siren Action",
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/base#/definitions/name" },
+        "title": { "$ref": "http://hyperschema.org/core/base#/definitions/title" },
+        "method": {},
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "type": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaType" },
+        "fields": { "$ref": "#/definitions/fields" }
+      }
+    },
+    "fields": {
+      "title": "Siren Fields Array",
+      "description": "Array of Siren fields",
+      "type": "array",
+      "items": { "$ref": "#/definitions/field" }
+    },
+    "field": {
+      "title": "Siren Field",
+      "description": "Siren Field",
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
+        "type": {},
+        "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" }
+      }
+    },
+    "links": {
+      "title": "Siren Links Array",
+      "description": "Array of Siren links",
+      "type": "array",
+      "items": { "$ref": "#/definitions/link" }
+    },
+    "link": {
+      "title": "Siren Link",
+      "description": "Siren Link",
+      "type": "object",
+      "properties": {
+        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
+      }
+    }
+  }
+}
