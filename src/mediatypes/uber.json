@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "uber": { "$ref": "#/definitions/uberElement" }
+  },
+  "definitions": {
+    "uberElement": {
+      "title": "Root UBER Element",
+      "description": "The root UBER element",
+      "type": "object",
+      "properties": {
+        "version": { "$ref": "http://hyperschema.org/core/meta#/definitions/version" },
+        "data": { "$ref": "#/definitions/dataArray" }
+      }
+    },
+    "dataArray": {
+      "title": "UBER Data Array",
+      "description": "UBER Data Array",
+      "type": "array",
+      "items": { "$ref": "#/definitions/dataElement" }
+    },
+    "dataElement": {
+      "title": "UBER Data Element",
+      "description": "UBER Data Element",
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "http://hyperschema.org/core/base#/definitions/id" },
+        "name": { "$ref": "http://hyperschema.org/core/base#/definitions/name" },
+        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rels" },
+        "url": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
+        "action": { "$ref": "#/definitions/actions" },
+        "transclude": { "$ref": "http://hyperschema.org/core/link#/definitions/transclude" },
+        "model": { "$ref": "http://hyperschema.org/core/link#/definitions/queryStringURITemplate" },
+        "sending": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaTypes" },
+        "accepting": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaTypes" },
+        "value": { "type": "string" },
+        "data": { "$ref": "#/definitions/dataArray" }
+      }
+    },
+    "actions": {
+      "title": "UBER Actions",
+      "description": "UBER Actions",
+      "type": "string",
+      "enum": [
+        "append",
+        "partial",
+        "read",
+        "remove",
+        "replace"
+      ]
+    }
+  }
+}

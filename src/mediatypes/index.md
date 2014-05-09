@@ -18,3 +18,7 @@ This is a small subset of hypermedia definitions from HTML.
 ## [Siren](/mediatypes/siren)
 
 Siren is a hypermedia specification for representing entities, offering structures to communicate information about entities, actions for executing state transitions, and links for client navigation. 
+
+## [UBER](/mediatypes/uber)
+
+The UBER message format is a minimal read/write hypermedia type designed to support simple state transfers and ad-hoc hypermedia-based transitions.

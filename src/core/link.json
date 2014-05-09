@@ -7,7 +7,7 @@
     },
     "hrefTemplated": {
       "title": "Templated HREF",
-      "description": "A hyperlink that is a URI template",
+      "description": "A hyperlink that is a URI template (RFC 6570)",
       "type": "string"
     },
     "isTemplated": {
@@ -19,6 +19,11 @@
       "title": "Is URI Deprecated?",
       "description": "Specifies whether or not a link is deprecated",
       "type": "boolean"
+    },
+    "queryStringURITemplate": {
+      "title": "Query String URI Template",
+      "description": "Specifies a query string URI template (RFC 6570)",
+      "type": "string"
     },
     "rel": {
       "title": "Link Relation",
@@ -35,6 +40,11 @@
       "title": "Label",
       "description": "Human-readable label for link",
       "type": "string"
+    },
+    "transclude": {
+      "title": "Should transclude?",
+      "description": "Specify whether or not a link should be transcluded",
+      "type": "boolean"
     }
   }
 }
