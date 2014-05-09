@@ -7,6 +7,4 @@ exampleFile: mediatypes/uber_files/example.json
 template: base.html
 ---
 
-**Incomplete**
-
 The UBER message format is a minimal read/write hypermedia type designed to support simple state transfers and ad-hoc hypermedia-based transitions.
