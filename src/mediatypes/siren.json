@@ -26,7 +26,7 @@
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/base#/definitions/name" },
         "title": { "$ref": "http://hyperschema.org/core/base#/definitions/title" },
-        "method": {},
+        "method": { "$ref": "http://hyperschema.org/protocols/http#/definitions/methods" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
         "type": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaType" },
         "fields": { "$ref": "#/definitions/fields" }
@@ -44,7 +44,7 @@
       "type": "object",
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
-        "type": {},
+        "type": { "$ref": "http://hyperschema.org/mediatypes/html#/definitions/type" },
         "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" }
       }
     },
@@ -59,7 +59,7 @@
       "description": "Siren Link",
       "type": "object",
       "properties": {
-        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rel" },
+        "rel": { "$ref": "http://hyperschema.org/core/link#/definitions/rels" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
       }
     }

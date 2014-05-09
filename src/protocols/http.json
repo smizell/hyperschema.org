@@ -1,0 +1,20 @@
+{
+  "definitions": {
+    "methods": {
+      "title": "HTTP Methods",
+      "description": "HTTP Methods",
+      "type": "string",
+      "enum": [
+        "OPTIONS",
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "TRACE",
+        "CONNECT",
+        "PATCH"
+      ]
+    }
+  }
+}

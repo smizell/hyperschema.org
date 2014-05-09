@@ -1,0 +1,43 @@
+{
+  "definitions": {
+    "input": {
+      "title": "HTML Input",
+      "description": "HTML Input",
+      "type": "object",
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
+        "type": { "$ref": "#/definitions/type" },
+        "value": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" }
+      }
+    },
+    "type": {
+      "title": "HTML Input Type",
+      "description": "HTML Input Type",
+      "type": "string",
+      "enum": [
+        "hidden",
+        "text",
+        "search",
+        "tel",
+        "url",
+        "email",
+        "password",
+        "datetime",
+        "date",
+        "month",
+        "week",
+        "time",
+        "datetime-local",
+        "number",
+        "range",
+        "color",
+        "checkbox",
+        "radio",
+        "file",
+        "image",
+        "reset",
+        "button"
+      ]
+    }
+  }
+}

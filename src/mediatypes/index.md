@@ -10,3 +10,7 @@ Collection+JSON is a JSON-based read/write hypermedia-type designed to support m
 ## [HAL](/mediatypes/hal)
 
 HAL is a simple format that gives a consistent and easy way to hyperlink between resources in your API.
+
+## [HTML](/mediatypes/html)
+
+This is a small subset of hypermedia definitions from HTML.
