@@ -1,0 +1,17 @@
+{
+  "title": "Base",
+  "description": "The base object for Hyperextend",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "http://hyperschema.org/core/base#/definitions/id" },
+    "classes": { "$ref": "http://hyperschema.org/core/base#h/definitions/classes" },
+    "title": { "$ref": "http://hyperschema.org/core/base#/definitions/title" },
+    "description": { "$ref": "http://hyperschema.org/core/base#/definitions/description" },
+    "version": { "$ref": "http://hyperschema.org/core/meta#/definitions/version" },
+    "extends": {
+      "title": "Extends URI",
+      "description": "URI to JSON to extend",
+      "type": "string"
+    }
+  }
+}

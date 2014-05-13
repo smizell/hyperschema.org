@@ -1,0 +1,9 @@
+{
+  "properties": {
+    "hreft": { "$ref": "http://hyperschema.org/core/link#/definitions/hrefTemplated" },
+    "uriParams": { 
+      "type": "array",
+      "items": { "$ref": "http://hyperschema.org/extend/hyperextend/field#" }
+    }
+  }
+}

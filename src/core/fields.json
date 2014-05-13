@@ -14,6 +14,21 @@
       "title": "Label",
       "description": "Human-readable label for field or parameter",
       "type": "string"
+    },
+    "mapsTo": {
+      "title": "Maps To",
+      "description": "Property to which the field or parameter points",
+      "type": "string"
+    },
+    "options": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/option" }
+    },
+    "option": {
+      "properties": {
+        "name": { "$ref": "#/definitions/name" },
+        "value": { "$ref": "#/definitions/value" }
+      }
     }
   }
 }

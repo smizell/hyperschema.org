@@ -4,6 +4,29 @@
       "title": "Version",
       "description": "A version number",
       "type": "string"
+    },
+    "jsonSchema": {
+      "title": "JSON Schema",
+      "description": "An object containing JSON Schema",
+      "type": "object"
+    },
+    "typeOf": {
+      "title": "Type Of",
+      "description": "URL to specify the type of a resource",
+      "type": "string"
+    },
+    "jsonType": {
+      "title": "JSON Type",
+      "description": "JSON Type",
+      "type": "string",
+      "enum": [
+        "number",
+        "string",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ]
     }
   }
 }

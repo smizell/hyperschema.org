@@ -1,6 +1,10 @@
 {
   "definitions": {
     "methods": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/method" }
+    },
+    "method": {
       "title": "HTTP Methods",
       "description": "HTTP Methods",
       "type": "string",
@@ -13,6 +17,26 @@
         "DELETE",
         "TRACE",
         "CONNECT",
+        "PATCH"
+      ]
+    },
+    "safeMethod": {
+      "title": "Safe HTTP Methods",
+      "description": "Safe HTTP Methods",
+      "type": "string",
+      "enum": [
+        "GET",
+        "HEAD"
+      ]
+    },
+    "unsafeMethod": {
+      "title": "Unsafe HTTP Methods",
+      "description": "Unsafe HTTP Methods",
+      "type": "string",
+      "enum": [
+        "POST",
+        "PUT",
+        "DELETE",
         "PATCH"
       ]
     }

@@ -26,7 +26,7 @@
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/base#/definitions/name" },
         "title": { "$ref": "http://hyperschema.org/core/base#/definitions/title" },
-        "method": { "$ref": "http://hyperschema.org/protocols/http#/definitions/methods" },
+        "method": { "$ref": "http://hyperschema.org/protocols/http#/definitions/method" },
         "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
         "type": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaType" },
         "fields": { "$ref": "#/definitions/fields" }

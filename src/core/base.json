@@ -36,6 +36,16 @@
       "title": "Title",
       "description": "A title for a resource, link, action, etc.",
       "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "description": "A description for a resource, link, action, etc.",
+      "type": "string"
+    },
+    "prefix": {
+      "title": "Prefix",
+      "description": "Prefix used for curies",
+      "type": "string"
     }
   }
 }

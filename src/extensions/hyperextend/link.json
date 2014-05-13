@@ -1,0 +1,5 @@
+{
+  "properties": {
+    "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
+  }
+}
