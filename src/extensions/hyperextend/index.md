@@ -3,7 +3,7 @@ title: Hyperextend
 template: base.html
 ---
 
-Hyperextend is a library of components that can be used to extend media types or create new media types.
+Hyperextend is a library of components that can be used to extend media types or create new media types. It is an opinionated way of grouping the [Hyperschema.org Core Definitions](/core/).
 
 ## [Base](/extensions/hyperextend/base)
 

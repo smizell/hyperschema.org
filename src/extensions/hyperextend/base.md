@@ -5,4 +5,4 @@ schemaFile: extensions/hyperextend/base.json
 template: base.html
 ---
 
-Base Hyperextend object.
+Base Hyperextend object. This is the object that all other objects inherit.
