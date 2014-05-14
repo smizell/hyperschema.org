@@ -5,4 +5,4 @@ schemaFile: extensions/hyperextend/baseaction.json
 template: base.html
 ---
 
-Action Hyperextend object. This is the base for all actions, such as normal actions or templated actions.
+Base Action Hyperextend object. This is the base for all actions, such as normal actions or templated actions.

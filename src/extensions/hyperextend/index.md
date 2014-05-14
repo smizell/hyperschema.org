@@ -19,6 +19,10 @@ BaseAction component.
 
 BaseLink component. Extends `Base`.
 
+## [BaseQuery](/extensions/hyperextend/basequery)
+
+BaseQuery component. Extends `Base`.
+
 ---
 
 ## [Action](/extensions/hyperextend/action)

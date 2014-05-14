@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "queryParams": {
+      "type": "array",
+      "items": { "$ref": "http://hyperschema.org/extend/hyperextend/field#" }
+    } 
+  }
+}
