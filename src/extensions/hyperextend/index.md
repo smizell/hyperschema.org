@@ -45,17 +45,17 @@ Resource Template component. Extends `Base`.
 
 ## [Semantic](/extensions/hyperextend/semantic)
 
-Field component. Extends `Base`.
+Semantic component. Extends `Base`.
 
 ---
 
 ## [TemplatedAction](/extensions/hyperextend/templatedaction)
 
-Link component. Extends `TemplatedLink` and `BaseAction`.
+TemplatedAction component. Extends `TemplatedLink` and `BaseAction`.
 
 ## [TemplatedLink](/extensions/hyperextend/templatedlink)
 
-Link component. Extends `BaseLink`.
+TemplatedLink component. Extends `BaseLink`.
 
 ## [TemplatedQuery](/extensions/hyperextend/templatedquery)
 
