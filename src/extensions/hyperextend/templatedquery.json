@@ -1,8 +1,13 @@
 {
-  "properties": {
-    "queryParams": {
-      "type": "array",
-      "items": { "$ref": "http://hyperschema.org/extend/hyperextend/field#" }
-    } 
-  }
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/templatedlink#" },
+    {
+      "properties": {
+        "queryParams": {
+          "type": "array",
+          "items": { "$ref": "http://hyperschema.org/extend/hyperextend/field#" }
+        } 
+      }
+    }
+  ]
 }

@@ -1,0 +1,6 @@
+{
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/templatedlink#" },
+    { "$ref": "http://hyperschema.org/extend/hyperextend/baseaction#" }
+  ]
+}

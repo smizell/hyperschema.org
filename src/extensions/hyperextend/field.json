@@ -1,11 +1,16 @@
 {
-  "properties": {
-    "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
-    "defaultValue": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
-    "currentValue": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
-    "options": { "$ref": "http://hyperschema.org/core/fields#/definitions/options" },
-    "type": { "$ref": "http://hyperschema.org/mediatypes/html#/definitions/type" },
-    "label": { "$ref": "http://hyperschema.org/core/fields#/definitions/label" },
-    "mapsTo": { "$ref": "http://hyperschema.org/core/fields#/definitions/mapsTo" }
-  }
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/base#" },
+    {
+      "properties": {
+        "name": { "$ref": "http://hyperschema.org/core/fields#/definitions/name" },
+        "defaultValue": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
+        "currentValue": { "$ref": "http://hyperschema.org/core/fields#/definitions/value" },
+        "options": { "$ref": "http://hyperschema.org/core/fields#/definitions/options" },
+        "type": { "$ref": "http://hyperschema.org/mediatypes/html#/definitions/type" },
+        "label": { "$ref": "http://hyperschema.org/core/fields#/definitions/label" },
+        "mapsTo": { "$ref": "http://hyperschema.org/core/fields#/definitions/mapsTo" }
+      }
+    }
+  ]
 }

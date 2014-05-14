@@ -1,5 +1,10 @@
 {
-  "properties": {
-    "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
-  }
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/baselink#" },
+    {
+      "properties": {
+        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
+      }
+    }
+  ]
 }

@@ -5,4 +5,4 @@ schemaFile: extensions/hyperextend/templatedlink.json
 template: base.html
 ---
 
-Templated Link Hyperextend object. Extends [BaseTemplatedLink](/extensions/hyperextend/basetemplatedlink).
+Templated Link Hyperextend object. Extends [BaseLink](/extensions/hyperextend/baselink).

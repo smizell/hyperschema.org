@@ -1,0 +1,20 @@
+{
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/base#" },
+    {
+      "properties": {
+        "semantic": {
+          "type": "object",
+          "properties": {
+            "name": { "$ref": "http://hyperschema.org/core/properties#/definitions/name" },
+            "type": { "$ref": "http://hyperschema.org/core/meta#/definitions/jsonType" },
+            "format": { "$ref": "http://hyperschema.org/mediatypes/html#/definitions/type" },
+            "value": { "$ref": "http://hyperschema.org/core/properties#/definitions/value" },
+            "typeOf": { "$ref": "http://hyperschema.org/core/meta#/definitions/typeOf" },
+            "label": { "$ref": "http://hyperschema.org/core/properties#/definitions/label" }
+          }
+        }
+      }
+    }
+  ]
+}

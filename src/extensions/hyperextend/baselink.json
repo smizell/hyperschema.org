@@ -1,19 +1,24 @@
 {
-  "properties": {
-    "prefixes": {
-      "type": "array",
-      "items": { "$ref": "#/definitions/prefix" }
-    },
-    "rels": { "$ref": "http://hyperschema.org/core/link#/definitions/rels" },
-    "responseTypes": { "$ref": "http://hyperschema.org/core/link#/definitions/mediaTypes" },
-    "embedAs": { "type": "string" }
-  },
-  "definitions": {
-    "prefix": { 
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/base#" },
+    {
       "properties": {
-        "prefix": { "$ref": "http://hyperschema.org/core/base#/definitions/prefix" },
-        "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
+        "prefixes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/prefix" }
+        },
+        "rels": { "$ref": "http://hyperschema.org/core/link#/definitions/rels" },
+        "responseTypes": { "$ref": "http://hyperschema.org/core/link#/definitions/mediaTypes" },
+        "embedAs": { "type": "string" }
+      },
+      "definitions": {
+        "prefix": { 
+          "properties": {
+            "prefix": { "$ref": "http://hyperschema.org/core/base#/definitions/prefix" },
+            "href": { "$ref": "http://hyperschema.org/core/link#/definitions/href" }
+          }
+        }
       }
     }
-  }
+  ]
 }

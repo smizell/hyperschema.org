@@ -1,0 +1,19 @@
+{
+  "allOf": [
+    { "$ref": "http://hyperschema.org/extend/hyperextend/base#" },
+    {
+      "properties": {
+        "template": {
+          "properties": {
+            "mediaTypes": { "$ref": "http://hyperschema.org/core/link#/definitions/mediaTypes" },
+            "fields": {
+              "type": "array",
+              "items": { "$ref": "http://hyperschema.org/extend/hyperextend/field#" }
+            },
+            "jsonSchema": { "$ref": "http://hyperschema.org/core/meta#/definitions/jsonSchema" }
+          }
+        }
+      }
+    }
+  ]
+}
