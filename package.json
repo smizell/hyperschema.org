@@ -17,8 +17,9 @@
     "underscore": "~1.6.0"
   },
   "devDependencies": {
-    "express": "~4.1.1",
     "chokidar": "~0.8.2",
+    "express": "~4.1.1",
+    "jayschema": "^0.3.1",
     "metalsmith-watch": "~0.1.1"
   }
 }

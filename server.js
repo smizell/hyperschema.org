@@ -11,6 +11,15 @@ builder
     if (err) throw err;
   })
 
+
+// Handles CORS
+function addCors(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+}
+
+
 // Handles every request to the server. It aims to provide content
 // negotiation which allows this server to serve up HTML and JSON
 // from the same URI.
@@ -34,6 +43,8 @@ function pageRoute(req, res, next) {
     }
   });
 }
+
+app.use('/*', addCors);
 
 // Serve up assets
 app.use('/assets', express.static(__dirname + '/build/assets'));
