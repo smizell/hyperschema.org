@@ -29,7 +29,7 @@
       "properties": {
         "name": { "$ref": "http://hyperschema.org/core/base#/definitions/name" },
         "href": {
-          "oneOf": [
+          "anyOf": [
             { "$ref": "http://hyperschema.org/core/link#/definitions/href" },
             { "$ref": "http://hyperschema.org/core/link#/definitions/hrefTemplated" }
           ]
