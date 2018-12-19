@@ -33,7 +33,14 @@
         "model": { "$ref": "http://hyperschema.org/core/link#/definitions/queryStringURITemplate" },
         "sending": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaTypes" },
         "accepting": { "$ref": "http://hyperschema.org/core/base#/definitions/mediaTypes" },
-        "value": { "type": "string" },
+        "value": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "number" },
+            { "type": "boolean" },
+            { "type": "null" }
+          ]
+        },
         "data": { "$ref": "#/definitions/dataArray" }
       }
     },
